@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+    <!-- <link rel="stylesheet" href="../CSS/site-nav.css"> -->
+  <script src="../app.js"></script>
+    <!-- <script src="../JS/site-nav.js"></script> -->
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <figure>
+            <img
+                src="../images/Hero.webp"
+                alt="User Avatar"
+                data-testid="test-user-avatar"
+            />
+        </figure>
+
+        <div class="content">
+            <header>
+                <h2 data-testid="test-user-name">Adewale Niyi</h2>
+            </header>
+
+            <p class="first" data-testid="test-user-bio">
+                A passionate Frontend Developer and gaming enthusiast who loves building fun projects, learning new techs and Genshin Impact. ⚡
+            </p>
+
+            <div class="time" data-testid="test-user-time"></div>
+
+            <nav>
+                <ul data-testid="test-user-social-links">
+                    <li>
+                        <a
+                        href="https://x.com/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter"
+                        >
+                            Twitter
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a 
+                        href="https://github.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-github"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a
+                        href="https://linkedin.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-testid="test-user-social-linkedin"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Coding</li>
+                    <li>Playing Genshin Impact</li>
+                    <li>Watching football</li>
+                    <li>Watching Formula 1</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Slow Wi-Fi</li>
+                    <li>Bugs in my code</li>
+                    <li>Poor documentation</li>
+                    <li>Bad project structure</li>
+                </ul>
+            </section>
+
+            <section>
+                <a href="../HTML/AboutMe.html" target="_blank">A little Info about me</a>
+                <a href="../HTML/ContactUs.html" target="_blank">Contact Me</a>
+            </section>
+        </div>
+    </article>
+</body>
+</html>

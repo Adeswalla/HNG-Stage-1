@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/ContactUs.css">
+        <!-- <link rel="stylesheet" href="../CSS/site-nav.css"> -->
+</head>
+<body>
+    <nav class="site-nav"></nav>
+    <div class="contact-container">
+        <!-- Title of the page -->
+        <h1>Contact Us</h1>
+
+        <form action="/submit" method="post">
+            <!-- For Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" data-testid="test-contact-name" required>
+
+            <!-- For Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" data-testid="test-contact-email" required>
+
+            <!-- For Subject -->
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" data-testid="test-contact-subject" required>
+
+            <!-- For the Message you want to send -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" data-testid="test-contact-message" required></textarea>
+
+            <!-- This is the submit button -->
+            <button type="submit" data-testid="test-contact-submit">Submit</button>
+            <div id="test-contact-success" tabindex="-1" style="display:none; color:#28a745; font-weight:600; margin-top:18px; text-align:center;">Thank you! Your message has been sent.</div>
+
+            <section>
+                <span><a href="../HTML/AboutMe.html" target="_blank">A little Info about me</a></span>
+                <a href="../HTML/ContactUs.html" target="_blank">Contact Me</a>
+            </section>
+        </form>
+  </div>
+
+  <script src="../JS/ContactUs.js"></script>
+    <!-- <script src="../JS/site-nav.js"></script> -->
+</body>
+</html>

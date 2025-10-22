@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 24px;
+    font-family: 'BBH Sans Hegarty', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+.content {
+    max-width: 900px;
+    margin: 28px auto;
+    background: #ffffff;
+    padding: 24px 28px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(31,41,55,0.06);
+}
+
+h1 {
+    margin: 0 0 12px 0;
+    text-align: left;
+    font-size: 2rem;
+    color: #0f172a;
+}
+
+/* Profile header */
+.profile {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg,#ff6e7f,#bfe9ff);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.name-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-title .name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #0b2b4a;
+}
+
+.name-title .role {
+    font-size: 0.92rem;
+    color: #5b6b79;
+}
+
+h2 {
+    margin: 18px 0 8px 0;
+    font-size: 1.1rem;
+    color: #0b2b4a;
+}
+
+/* section divider */
+.section {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(15,23,42,0.04);
+}
+
+.section:last-of-type { border-bottom: none; }
+
+p {
+    margin: 0 0 12px 0;
+    line-height: 1.6;
+    color: #334155;
+}
+
+ul {
+    margin: 8px 0 12px 18px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* nicer bullets */
+ul {
+    padding-left: 1.2rem;
+}
+ul li::marker {
+    color: #ff6e7f;
+    font-weight: 700;
+}
+
+/* callout */
+.callout {
+    background: linear-gradient(90deg,#fff8f9,#f6fbff);
+    border-left: 4px solid #ff6e7f;
+    padding: 12px;
+    border-radius: 6px;
+    color: #0f172a;
+}
+
+span a {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
+    margin-right: 12px;
+    display: block;
+    /* gap: 12px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a   {
+    text-decoration: none;
+    color: #0077ff;
+    font-weight: 500;
+    margin-right: 12px;
+}
+
+@media (max-width: 640px) {
+    .content {
+        padding: 18px;
+        margin: 18px 12px;
+    }
+    h1 { font-size: 1.6rem; }
+}
+
