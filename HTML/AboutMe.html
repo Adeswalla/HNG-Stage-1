@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Hegarty&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="../CSS/AboutMe.css">
-        <link rel="stylesheet" href="../CSS/site-nav.css">
+    <!-- <link rel="stylesheet" href="../CSS/site-nav.css"> -->
 </head>
 <body>
-    <nav class="site-nav"></nav>
-    <main>
+    <!-- <nav class="site-nav"></nav> -->
+    <main data-testid="test-about-page">
 
         <div class="content">
             <header class="profile">
@@ -25,12 +25,12 @@
                 </div>
             </header>
 
-            <section class="bio section">
+            <section class="bio section" data-testid="test-about-bio">
                 <h2>My Bio</h2>
                 <p>I am a passionate and creative tech enthusiast with a growing expertise in web development, particularly in JavaScript and TypeScript. Driven by curiosity and innovation, I enjoy building engaging projects, exploring emerging technologies, and diving into the world of gaming and tech communities. With a strong interest in both frontend design and functionality, I try my best to continue to expand my skills, aiming to create meaningful digital experiences that blend creativity, efficiency, and impact.</p>
             </section>
 
-            <section class="goals section">
+            <section class="goals section" data-testid="test-about-goals">
                 <h2>My Goals</h2>
                 <ul>
                     <li>I aim to strengthen my technical skills by working on real-world projects that challenge me to apply what I’ve learned and explore new tools and technologies.</li>
@@ -38,14 +38,20 @@
                     <li>I want to build a strong portfolio, connect with other professionals in the tech space, and discover the area of tech I’m most passionate about so I can become confident, employable, and industry-ready.</li>
                 </ul>
             </section>
-            <section class="confidence section">
+
+            <section class="confidence section" data-testid="test-about-confidence">
                 <h2>Areas of Low Confidence</h2>
                 <p>I'm working to improve on my knowledge of advanced frontend concepts and deep TypeScript typing. I see these as growth areas and plan to study and practice them throughout this internship.</p>
             </section>
 
-            <section class="note-to-self section">
+            <section class="note-to-self section" data-testid="test-about-future-note">
                 <h2>Note to Future Self</h2>
                 <div class="callout">Keep building, keep shipping. Don't be afraid to ask for help and iterate quickly.</div>
+            </section>
+
+            <section>
+                <h2>Extra thoughts</h2>
+                <div class="extra-thoughts">The Tech journey so far has been long long and arduous but it'll all be worth it at the end of the day</div>
             </section>
 
             <section>
